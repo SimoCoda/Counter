@@ -1,0 +1,116 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/sfondo.jpg");
+    background-size: cover;
+}
+h1{
+    color:white;
+    font-size: 160px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: -80px;
+    text-shadow: 5px 5px grey;
+}
+.counter{
+    height: 550px;
+    width: 650px;
+    background-color: white;
+    margin: 0px auto;
+    border-radius: 20%;
+}
+h2{
+    font-size: 160px;
+    position: relative;
+    top: 50px;
+    margin-bottom: 0px;
+    color: black;
+    text-align: center;
+}
+#bottoni{
+    height: 100px;
+    width: 150px;
+    font-size: 80px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 80px;
+    border: 2px solid black;
+    border-radius: 20%;
+    outline: none;
+    cursor: pointer;
+    box-shadow:  0 5px 0 0 black;
+    user-select: none;
+}
+#bottoni:active{
+    transform: translatey(5px);
+    box-shadow: 0 0 0 0 black;
+}
+.piu{
+    float: right;
+}
+.reset{
+    height: 50px;
+    width: 100px;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 280px;
+    top: -30px;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid black;
+    box-shadow:  0 3px 0 0 black;
+    user-select: none;
+}
+.reset:active{
+    transform: translatey(3px);
+    box-shadow: 0 0 0 0 black;
+}
+
+@media (max-width: 480px) {
+    h1{
+        font-size: 70px;
+        text-shadow: 1px 1px grey;
+        margin-bottom: 80px;
+    }
+    .counter{
+        height: 380px;
+        width: 350px;
+        margin: -50px auto;
+    }
+    h2{
+        font-size: 80px;
+        margin-bottom: 60px;
+    }
+    #bottoni{
+        height: 50px;
+        width: 70px;
+        font-size: 40px;
+        margin: 40px;
+        border: 1px solid black;
+        box-shadow:  0 2px 0 0 black;
+    }
+    #bottoni:active{
+        transform: translatey(2px);
+        box-shadow: 0 0 0 0 black;
+    }
+    .reset{
+        height: 30px;
+        width: 50px;
+        font-size: 15px;
+        border: 1px solid black;
+        box-shadow:  0 1px 0 0 black;
+        top: 5px;
+        left: 150px;
+    }
+    .reset:active{
+        transform: translatey(1px);
+        box-shadow: 0 0 0 0 black;
+    }
+}

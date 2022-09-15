@@ -95,6 +95,9 @@ h2{
         margin: 40px;
         border: 1px solid black;
         box-shadow:  0 2px 0 0 black;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
     #bottoni:active{
         transform: translatey(2px);
@@ -102,12 +105,15 @@ h2{
     }
     .reset{
         height: 30px;
-        width: 50px;
+        width: 80px;
         font-size: 15px;
         border: 1px solid black;
         box-shadow:  0 1px 0 0 black;
         top: 5px;
-        left: 150px;
+        left: 135px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
     .reset:active{
         transform: translatey(1px);

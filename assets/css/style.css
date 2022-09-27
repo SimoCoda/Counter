@@ -12,32 +12,30 @@ h1{
     font-size: 160px;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: -80px;
-    text-shadow: 5px 5px grey;
+    text-shadow: 3px 3px grey;
 }
 .counter{
     height: 550px;
     width: 650px;
     background-color: white;
-    margin: 0px auto;
+    margin: -50px auto;
     border-radius: 20%;
 }
 h2{
     font-size: 160px;
     position: relative;
     top: 50px;
-    margin-bottom: 0px;
+    margin-bottom: 80px;
     color: black;
     text-align: center;
 }
-#bottoni{
-    height: 100px;
-    width: 150px;
+.bottoni{
+    padding: 10px 30px;
     font-size: 80px;
+    margin: 111px;
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin: 80px;
     border: 2px solid black;
     border-radius: 20%;
     outline: none;
@@ -45,23 +43,22 @@ h2{
     box-shadow:  0 5px 0 0 black;
     user-select: none;
 }
-#bottoni:active{
+#piu{
+    float: right;
+    margin: -15px 95px;
+}
+.bottoni:active{
     transform: translatey(5px);
     box-shadow: 0 0 0 0 black;
-}
-.piu{
-    float: right;
 }
 .reset{
     height: 50px;
     width: 100px;
+    padding: 10px;
     font-size: 25px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
     position: relative;
-    left: 280px;
-    top: -30px;
+    left: 285px;
+    top: 90px;
     outline: none;
     cursor: pointer;
     border: 2px solid black;
@@ -88,18 +85,18 @@ h2{
         font-size: 80px;
         margin-bottom: 60px;
     }
-    #bottoni{
+    .bottoni{
         height: 50px;
         width: 70px;
         font-size: 40px;
-        margin: 40px;
+        margin: 46px;
         border: 1px solid black;
         box-shadow:  0 2px 0 0 black;
         text-align: center;
         align-items: center;
         justify-content: center;
     }
-    #bottoni:active{
+    .bottoni:active{
         transform: translatey(2px);
         box-shadow: 0 0 0 0 black;
     }

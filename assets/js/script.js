@@ -1,45 +1,49 @@
 document.addEventListener('DOMContentLoaded', function( ){
-    var a = 0;
 
-    const contatore = document.querySelector(".counter");
-    const title = document.createElement("h2");
-    title.textContent = "0";
-    contatore.appendChild(title);
+    function contenuto(){
+        var a = 0;
 
-    const aggiungi = document.querySelector(".counter");
+        const contatore = document.querySelector(".counter");
+        const title = document.createElement("h2");
+        title.textContent = "0";
+        contatore.appendChild(title);
+
+        const minusOne = document.createElement("botton");
+        minusOne.textContent = "-";
+        contatore.appendChild(minusOne);
+
+        const plusOne = document.createElement("botton");
+        plusOne.textContent = "+";
+        contatore.appendChild(plusOne);
     
-    const minusOne = document.createElement("botton");
-    minusOne.textContent = "-";
-    aggiungi.appendChild(minusOne);
-
-    const plusOne = document.createElement("botton");
-    plusOne.textContent = "+";
-    aggiungi.appendChild(plusOne);
+        const reset = document.createElement("botton");
+        reset.textContent = "reset";
+        contatore.appendChild(reset);
     
-    const reset = document.createElement("botton");
-    reset.textContent = "reset";
-    aggiungi.appendChild(reset);
-    
+        plusOne.setAttribute("class", "bottoni");
+        plusOne.setAttribute("id", "piu");
 
-    plusOne.setAttribute("class", "bottoni");
-    plusOne.setAttribute("id", "piu");
+        minusOne.setAttribute("class", "bottoni");
+        minusOne.setAttribute("id", "meno");
 
-    minusOne.setAttribute("class", "bottoni");
+        reset.setAttribute("class", "reset");
+        reset.setAttribute("id", "res");
 
-    reset.setAttribute("class", "reset");
+        document.querySelector(".counter").addEventListener("click", (e) => {
+            if(e.target.id === "piu"){
+                a++;
+                document.querySelector("h2").innerHTML = a;
+            } else if (e.target.id === "meno"){
+                if(a>0){
+                    a--;
+                    document.querySelector("h2").innerHTML = a;
+                }
+            } else if (e.target.id === "res"){
+                a = 0;
+                document.querySelector("h2").innerHTML = a;
+            }
+        })
+    };
 
-    plusOne.addEventListener("click", function(){
-        a++;
-        document.querySelector("h2").innerHTML = a;
-    })
-    minusOne.addEventListener("click", function(){
-        if (a>0){
-            a--;
-            document.querySelector("h2").innerHTML = a;
-        }
-    })
-    reset.addEventListener("click", function(){
-        a = 0;
-        document.querySelector("h2").innerHTML = a;
-    })
+    contenuto();
 });

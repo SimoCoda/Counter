@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function(){
             let e = document.createElement(type);
             e.textContent = text;
             e.setAttribute('class', className);
-            e.setAttribute('id', id)
+            e.setAttribute('id', id);
             counterBox.appendChild(e);
         };
 
